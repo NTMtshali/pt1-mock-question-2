@@ -1,6 +1,6 @@
 #ifndef TIME_H
 #define TIME_H
-#include < iostream>
+#include <iostream>
 using namespace std;
 
 class Time
@@ -9,11 +9,11 @@ private:
 	int Hour;
 	int Min;
 
-private:
+public:
 	Time(int, int);
-	~Time();
+	
 	void set(int, int);
-	void get(int, int) const;
+	void get(int &, int &) const;
 	friend ostream &operator<<(ostream &, const Time &);
 	Time operator++(int);
 };

@@ -11,7 +11,7 @@ private:
 
 public:
 	Time(int, int);
-	
+	~Time();
 	void set(int, int);
 	void get(int &, int &) const;
 	friend ostream &operator<<(ostream &, const Time &);

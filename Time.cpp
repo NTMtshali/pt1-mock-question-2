@@ -5,7 +5,9 @@ Time::Time(int hh=0, int mm=0)
 {
 	set(hh, mm);
 }
-
+Time ::~Time()
+{
+}
 void Time::set(int hh, int mm)
 {
 	if (hh >= 0 && hh <=23)
